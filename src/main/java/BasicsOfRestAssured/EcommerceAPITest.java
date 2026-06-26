@@ -74,7 +74,7 @@ public class EcommerceAPITest {
                 .param("productDescription", "Latest Model")
                 .param("productFor", "Automation Practice")
                 .multiPart("productImage",
-                        new File("C://Users//somes//Downloads//HeadPhones1.jpg"))
+                        new File("src/main/resources/FilesForUpload/HeadPhones1.jpg"))
                 .when()
                 .post("/api/ecom/product/add-product")
                 .then()
